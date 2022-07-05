@@ -30,9 +30,17 @@ body {
   justify-content: center;
   align-content: center;
   color: aliceblue;
+  justify-self: center;
+  align-self: center;
 }
 .tool-container :hover {
   cursor: pointer;
+  width: 90%;
+  height: 90%;
+  transition: all 0.5s;
+}
+.btn-game:hover {
+  color: antiquewhite;
 }
 .tool-container :active {
   background-color: rgb(60, 107, 145);
@@ -44,8 +52,18 @@ body {
   color: aliceblue;
   border: none;
   border-radius: 10px;
+  justify-self: center;
+  align-self: center;
 }
-
+@media (max-width: 500px) {
+  .tool-container {
+    width: 80%;
+    height: 80%;
+  }
+  .btn-game {
+    font-size: 40px;
+  }
+}
 .tool-container p {
   text-align: center;
   margin-top: 6px;
@@ -72,4 +90,58 @@ body {
   background-color: rgb(236, 240, 240);
   border: none;
   font-size: 20px;
+}
+
+.action:active {
+  background-color: black;
+  color: aliceblue;
+}
+.action:hover {
+  cursor: pointer;
+  width: 62%;
+  height: 53px;
+}
+.selection {
+  display: flex;
+  max-width: 600px;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.selection-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(236, 240, 240);
+  width: 100px;
+  height: 100px;
+  background-color: rgb(1, 43, 78);
+  font-size: 40px;
+}
+
+.result {
+  margin: auto;
+}
+.result .win {
+  color: rgb(10, 196, 10);
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.result .draw {
+  font-size: 26px;
+  color: rgb(255, 255, 0);
+  text-align: center;
+  font-weight: bold;
+}
+
+.result .lose {
+  font-size: 26px;
+  color: rgb(230, 2, 2);
+  text-align: center;
+  font-weight: bold;
 }

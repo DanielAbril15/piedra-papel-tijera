@@ -15,21 +15,22 @@
     <section class="game-container">
 
         <section class="tool-container rock">
-            <button class="icon-piedra btn-game" id="rock" name="op1">Piedra</button>
+            <button class="icon-piedra btn-game" data-id="rock" name="op1">Piedra</button>
         </section>
         <section class="tool-container paper">
-            <button class="icon-papel btn-game" id="paper" name="op2">Papel</button>
+            <button class="icon-papel btn-game" data-id="paper" name="op2">Papel</button>
         </section>
         <section class="tool-container scissors ">
-            <button class="icon-tijera btn-game " id="scissors" name="op3">Tijera</button>
+            <button class="icon-tijera btn-game " data-id="scissors" name="op3">Tijera</button>
         </section>
         <button class="action" id="action">Juega</button>
     </section>
-    <section id="result">
-        <img src="" alt="">
-        <img src="" alt="">
+    <section id="selection" class="selection">
+        <div class="user_selection"></div>
+        <div class="cpu_selection"></div>
     </section>
-
+    <section class="result"></section>
+    <script src="code.js"></script>
 </body>
 
 </html>
